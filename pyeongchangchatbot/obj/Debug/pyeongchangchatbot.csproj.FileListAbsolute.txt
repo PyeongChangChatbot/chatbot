@@ -78,3 +78,11 @@ C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\zh-hans\Microsof
 C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\obj\Debug\pyeongchangchatbot.csprojResolveAssemblyReference.cache
 C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\obj\Debug\Bot Application.dll
 C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\obj\Debug\Bot Application.pdb
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\BigMath.dll
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\Ionic.Zip.dll
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\Ionic.ZLib.dll
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\TeleSharp.TL.dll
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\TLSharp.Core.dll
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\Ionic.Zip.xml
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\obj\Debug\Interop.SHDocVw.dll
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\obj\Debug\pyeongchangchatbot.csproj.ResolveComReference.cache

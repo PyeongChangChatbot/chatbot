@@ -22,14 +22,8 @@
 
         dynamic url = "https://www.pyeongchang2018.com/en/bbs/press/image/list";
 
-        
-        
-        
-        public int limit = 3;
-        public async Task StartAsync(IDialogContext context)
+        public async Task Crawling(IDialogContext context)
         {
-            index = rnd.Next(0, 15);
-
             titles.Clear();
             descriptions.Clear();
             dates.Clear();
@@ -80,6 +74,18 @@
                     }
                 }
             }
+
+            
+        }
+
+
+
+        public int limit = 3;
+        public async Task StartAsync(IDialogContext context)
+        {
+            await this.Crawling(context);
+
+            index = rnd.Next(0, 15);
 
             await context.PostAsync(" - title : " + titles[index]);
             await context.PostAsync(" - description : " + descriptions[index]);
