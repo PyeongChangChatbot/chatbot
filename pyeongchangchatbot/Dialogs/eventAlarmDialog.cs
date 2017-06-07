@@ -10,10 +10,13 @@
     [Serializable]
     public class eventAlarmDialog : IDialog<string>
     {
+        Activity activity = new Activity();
 
         public async Task StartAsync(IDialogContext context)
         {
-           
+            string userName = activity.From.Name;
+
+            await context.PostAsync("Your name is: " + userName);
         }
 
 
