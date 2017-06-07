@@ -14,9 +14,6 @@
         public async Task StartAsync(IDialogContext context)
         {
            
-            await context.PostAsync("What is your name?");
-
-            //context.Wait(this.MessageReceivedAsync);
         }
 
 

@@ -5,93 +5,60 @@
     using System.Threading.Tasks;
     using Microsoft.Bot.Connector;
     using System.Collections;
+    using HtmlAgilityPack;
 
     [Serializable]
     public class newsDialog : IDialog<string>
     {
-
-        SHDocVw.InternetExplorer IE = new SHDocVw.InternetExplorer();
-
         ArrayList titles = new ArrayList();
         ArrayList descriptions = new ArrayList();
-        ArrayList dates = new ArrayList();
-        ArrayList links = new ArrayList();
+        ArrayList datetimes = new ArrayList();
+        ArrayList addresses = new ArrayList();
 
-        Random rnd = new Random();
-        int index;
+        string url = "https://www.pyeongchang2018.com/en/bbs/press/image/list";
 
-        dynamic url = "https://www.pyeongchang2018.com/en/bbs/press/image/list";
-
-        public async Task Crawling(IDialogContext context)
-        {
-            titles.Clear();
-            descriptions.Clear();
-            dates.Clear();
-            links.Clear();
-
-            IE.Navigate2(ref url);
-            while (IE.Busy == true || IE.ReadyState != SHDocVw.tagREADYSTATE.READYSTATE_COMPLETE)
-            {
-                System.Threading.Thread.Sleep(100);
-            }
-
-            mshtml.HTMLDocument doc = IE.Document;
-            mshtml.IHTMLElementCollection elemDiv = null, elemA = null;
-            elemDiv = doc.getElementsByTagName("div") as mshtml.IHTMLElementCollection;
-            elemA = doc.getElementsByTagName("a") as mshtml.IHTMLElementCollection;
-
-            foreach (mshtml.IHTMLElement elem in elemDiv)
-            {
-                //photo-tit(title), photo-desc(description), photo-date(date)
-                if (elem.className == "photo-tit")
-                {
-                    titles.Add(elem.innerText);
-                }
-                else if (elem.className == "photo-desc")
-                {
-                    descriptions.Add(elem.innerText);
-                }
-                else if (elem.className == "photo-date")
-                {
-                    dates.Add(elem.innerText);
-                }
-            }
-            foreach (mshtml.IHTMLElement elem in elemA)
-            {
-                //get start and end positions
-                int iStartPos = elem.outerHTML.IndexOf("onclick=\"") + ("onclick=\"").Length;
-                int iEndPos = elem.outerHTML.IndexOf("\">", iStartPos);
-                //get our substring
-
-                if (iEndPos > iStartPos)
-                {
-                    String s = elem.outerHTML.Substring(iStartPos, iEndPos - iStartPos);
-                    String[] onclickStrings = s.Split('\'');
-                    if (onclickStrings[0] == "$.funView(")
-                    {
-                        String link = "https://www.pyeongchang2018.com/en/bbs/press/image/view?menuId=255&bbsId=28&searchOpt=&searchTxt=&pageNo=1&sortSeCd=3&cnId=" + onclickStrings[1] + "&rows=" + onclickStrings[3] + "&langSeCd=en";
-                        links.Add(link);
-                    }
-                }
-            }
-
-            
-        }
-
-
+        HtmlWeb web = new HtmlWeb();
+        
 
         public int limit = 3;
         public async Task StartAsync(IDialogContext context)
         {
-            await this.Crawling(context);
 
-            index = rnd.Next(0, 15);
+            HtmlDocument doc = web.Load(url);
+            foreach (HtmlNode node in doc.DocumentNode.SelectNodes("//div[@class='photo-tit']"))
+            {
+                titles.Add(node.InnerHtml.Trim());
+            }
+            foreach (HtmlNode node in doc.DocumentNode.SelectNodes("//div[@class='photo-desc']"))
+            {
+                String[] s1 = node.InnerHtml.Trim().Split('\n');
+                String[] s2 = s1[s1.Length - 1].Trim().Split(' ');
+                String description = "";
+                for (int i = 4; i < s2.Length; i++)
+                {
+                    description = description + " " + s2[i];
+                }
+                descriptions.Add(description);
+            }
 
-            await context.PostAsync(" - title : " + titles[index]);
-            await context.PostAsync(" - description : " + descriptions[index]);
-            await context.PostAsync(" - date : " + dates[index]);
-            await context.PostAsync(" - link : " + links[index]);
+            foreach (HtmlNode node in doc.DocumentNode.SelectNodes("//div[@class='photo-date']"))
+            {
+                datetimes.Add(node.InnerHtml.Trim());
+            }
+            foreach (HtmlNode node in doc.DocumentNode.SelectNodes("//div[@class='photo-list']//a[@href='#view']"))
+            {
+                String[] s1 = node.OuterHtml.Trim().Split('\'');
+                String address = "https://www.pyeongchang2018.com/en/bbs/press/image/view?menuId=255&bbsId=28&searchOpt=&searchTxt=&pageNo=1&sortSeCd=3&cnId=" + s1[1] + "&rows=" + s1[3] + "&langSeCd=en";
+                addresses.Add(address);
+            }
 
+            Random rnd = new Random();
+            int index = rnd.Next(15);
+
+            await context.PostAsync("title: " + titles[index].ToString());
+            await context.PostAsync("descriptions: " + descriptions[index].ToString());
+            await context.PostAsync("datetimes: " + datetimes[index].ToString());
+            await context.PostAsync("addresses: " + addresses[index].ToString());
 
             if (limit > 0)
             {

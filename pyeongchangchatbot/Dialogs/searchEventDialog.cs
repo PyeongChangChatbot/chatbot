@@ -28,7 +28,7 @@
         private const string event16 = "Short Track Speed Skating";
         private const string event17 = "Closing Ceremony";
 
-       
+
 
         public async Task StartAsync(IDialogContext context)
         {
@@ -41,7 +41,7 @@
                 "원하시는 경기를 선택해주세요",
                 attempts: 3);
         }
-        
+
         private async Task AfterChoiceSelected(IDialogContext context, IAwaitable<string> result)
         {
             try
@@ -170,7 +170,7 @@
                 }
 
                 context.Done(selection);
-                
+
             }
             catch (TooManyAttemptsException)
             {
