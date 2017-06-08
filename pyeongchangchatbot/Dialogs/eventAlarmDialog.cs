@@ -6,6 +6,8 @@
     using Microsoft.Bot.Connector;
     using TLSharp;
     using TLSharp.Core;
+    using System.Net.Http;
+    using System.Web.Http;
 
     [Serializable]
     public class eventAlarmDialog : IDialog<string>
@@ -17,11 +19,13 @@
             string userName = activity.From.Name;
 
             await context.PostAsync("Your name is: " + userName);
+            
+
         }
 
 
 
-
-
     }
+
+
 }

@@ -5,6 +5,7 @@ using System.Web.Http;
 using Microsoft.Bot.Connector;
 using Microsoft.Bot.Builder.Dialogs;
 using pyeongchangchatbot.Dialogs;
+using System;
 
 namespace pyeongchangchatbot
 {
@@ -17,6 +18,25 @@ namespace pyeongchangchatbot
         /// </summary>
         public async Task<HttpResponseMessage> Post([FromBody]Activity activity)
         {
+            
+            var userAccount = new ChannelAccount(name: "Larry", id: "@UV357341");
+            var botAccount = new ChannelAccount("1234567890", "pyeongchangchatbot");
+            var connector = new ConnectorClient(new Uri(activity.ServiceUrl));
+            var conversationId = await connector.Conversations.CreateDirectConversationAsync(botAccount, userAccount);
+
+            Activity reply = activity.CreateReply($"You sent {activity.Text} which was {activity.Text.Length} characters");
+            await connector.Conversations.ReplyToActivityAsync(reply);
+
+
+            IMessageActivity message = Activity.CreateMessageActivity();
+            message.From = botAccount;
+            message.Recipient = userAccount;
+            message.Conversation = new ConversationAccount(id: conversationId.Id);
+            message.Text = "Hello, Larry!";
+            message.Locale = "en-Us";
+            await connector.Conversations.SendToConversationAsync((Activity)message);
+
+
             if (activity.Type == ActivityTypes.Message)
             {
                 /* Creates a dialog stack for the new conversation, adds RootDialog to the stack, and forwards all 
