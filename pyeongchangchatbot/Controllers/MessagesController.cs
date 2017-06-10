@@ -35,13 +35,15 @@ namespace pyeongchangchatbot
             message.Text = "Hello, Larry!";
             message.Locale = "en-Us";
             await connector.Conversations.SendToConversationAsync((Activity)message);
-
+            
 
             if (activity.Type == ActivityTypes.Message)
             {
                 /* Creates a dialog stack for the new conversation, adds RootDialog to the stack, and forwards all 
                  *  messages to the dialog stack. */
                 await Conversation.SendAsync(activity, () => new RootDialog());
+
+                Activity.CreateMessageActivity();
             }
             else
             {

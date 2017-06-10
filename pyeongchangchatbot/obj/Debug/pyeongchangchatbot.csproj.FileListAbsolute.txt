@@ -86,3 +86,6 @@ C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\TLSharp.Core.dll
 C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\Ionic.Zip.xml
 C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\obj\Debug\Interop.SHDocVw.dll
 C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\obj\Debug\pyeongchangchatbot.csproj.ResolveComReference.cache
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\HtmlAgilityPack.dll
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\HtmlAgilityPack.pdb
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\HtmlAgilityPack.xml

@@ -38,3 +38,54 @@ c:\users\kangb\onedrive\documents\visual studio 2017\Projects\pyeongchangchatbot
 c:\users\kangb\onedrive\documents\visual studio 2017\Projects\pyeongchangchatbot\pyeongchangchatbot\obj\Release\pyeongchangchatbot.csprojResolveAssemblyReference.cache
 c:\users\kangb\onedrive\documents\visual studio 2017\Projects\pyeongchangchatbot\pyeongchangchatbot\obj\Release\Bot Application.dll
 c:\users\kangb\onedrive\documents\visual studio 2017\Projects\pyeongchangchatbot\pyeongchangchatbot\obj\Release\Bot Application.pdb
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\Bot Application.dll.config
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\Bot Application.dll
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\Bot Application.pdb
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\Autofac.dll
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\BigMath.dll
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\Chronic.dll
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\HtmlAgilityPack.dll
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\Ionic.Zip.dll
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\Ionic.ZLib.dll
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\Microsoft.Bot.Builder.Autofac.dll
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\Microsoft.Bot.Builder.dll
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\Microsoft.Bot.Connector.dll
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\Microsoft.IdentityModel.Protocol.Extensions.dll
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\Microsoft.Rest.ClientRuntime.dll
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\Microsoft.WindowsAzure.Configuration.dll
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\Newtonsoft.Json.dll
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\System.Net.Http.Formatting.dll
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\System.Web.Http.dll
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\System.Web.Http.WebHost.dll
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\TeleSharp.TL.dll
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\TLSharp.Core.dll
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\Autofac.xml
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\HtmlAgilityPack.pdb
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\HtmlAgilityPack.xml
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\Ionic.Zip.xml
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\Microsoft.Bot.Builder.xml
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\Microsoft.Bot.Builder.Autofac.xml
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\Microsoft.Bot.Connector.xml
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\Microsoft.IdentityModel.Protocol.Extensions.xml
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\Microsoft.WindowsAzure.Configuration.xml
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\Newtonsoft.Json.xml
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\System.Net.Http.Formatting.xml
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\System.Web.Http.xml
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\System.Web.Http.WebHost.xml
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\ar\Microsoft.Bot.Builder.resources.dll
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\cs\Microsoft.Bot.Builder.resources.dll
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\de-dE\Microsoft.Bot.Builder.resources.dll
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\en\Microsoft.Bot.Builder.resources.dll
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\es\Microsoft.Bot.Builder.resources.dll
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\fa\Microsoft.Bot.Builder.resources.dll
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\fr\Microsoft.Bot.Builder.resources.dll
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\ja\Microsoft.Bot.Builder.resources.dll
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\ru\Microsoft.Bot.Builder.resources.dll
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\bin\zh-hans\Microsoft.Bot.Builder.resources.dll
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\obj\Release\pyeongchangchatbot.csprojResolveAssemblyReference.cache
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\obj\Release\Interop.SHDocVw.dll
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\obj\Release\pyeongchangchatbot.csproj.ResolveComReference.cache
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\obj\Release\Bot Application.dll
+C:\Users\hjsbl\PyeongChangChatbot-master\pyeongchangchatbot\obj\Release\Bot Application.pdb

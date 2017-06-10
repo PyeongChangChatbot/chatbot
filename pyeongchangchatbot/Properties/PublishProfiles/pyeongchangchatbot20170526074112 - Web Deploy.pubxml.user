@@ -6,7 +6,7 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZc3rZ/DtSEmwi4qcRcwsOQAAAAACAAAAAAAQZgAAAAEAACAAAAAA2pZ59Wg4yeeZlyFcjSpKeMxrjE39sYG0SlRxWsr2bgAAAAAOgAAAAAIAACAAAAAurT2zTFbhe6goFZ8hj9WdTEIj4Zam0h4R74bbTdl+T4AAAABfI8KfJ38YiNaaZ9hc/GEtDmlZcijwMR+e4ARnLiWo4ytdyQTbJnn14ubSZ5Sw1gGUMZLarO/6+hJGRyF1jYud/kIcMkN+igWUo2Rr42Ox/mhpCewNB/31JVWu4GR3t0OtTj+umOJA4QcudbqMYduC8ZlDJc2bIw1E7BykGs0VekAAAADFdva59nIBlF0QH2Y0LAYMFOH4uBJDi8yzJT8Q09gT7w0y2+Kqec7v3uKDXhMtdSynNTvCsUIH/cFqngDm2Nrx</EncryptedPassword>
-    <_NewBackgroundProfile>True</_NewBackgroundProfile>
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAYzA6y8JHJEyiF+r6OW+dKwAAAAACAAAAAAAQZgAAAAEAACAAAADBEO3pyM+/3HpDaokFz24zOUGRJIwzWMPCd8uJZOfX7QAAAAAOgAAAAAIAACAAAACgoRWKojYKSB17ddsrCZDxf2hqWYEFbGo13CkfBj8UnRAAAAAk3Jjhr/YgSXaShyfG2IIGQAAAAIpga+noO+KPeScjh2UtIh99P4sDt+oTNEDOA5L3ZY2zBn/IGp3uXbVInV62b8hWJE2RE3wiloIwuL9bCPXpQcE=</EncryptedPassword>
+    <_NewBackgroundProfile>False</_NewBackgroundProfile>
   </PropertyGroup>
 </Project>
